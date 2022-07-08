@@ -1,12 +1,10 @@
 # Creating a custom building:
 
-Place a JSON file in the folder JetSpec_Data/Buildings, place a texture in the folder specified by textureLocation in the JSON file.
+Place a JSON file in the folder JetSpec_Data/Mods, place a texture in the folder specified by textureLocation in the JSON file.
 
 ### Description:
 
 Adds a custom building to the game.
-
-
 
 ### Parameters:
 
@@ -30,7 +28,7 @@ Adds a custom building to the game.
 | textureLocation | string (filepath), "Data/Textures/WIP.png"                              |
 | buff            | string, "null"                                                          |
 | description     | string, "N/A"                                                           |
-| type            | [BuildingType](#buildingtype), "util"                              |
+| type            | [BuildingType](#buildingtype), "util"                                   |
 | level           | int, 1                                                                  |
 | scale           | Vector3, {"x":10.0,"y":1.0,"z":10.0,"magnitude":0.0,"sqrMagnitude":0.0} |
 
@@ -49,15 +47,11 @@ Adds a custom building to the game.
 }
 ```
 
-
-
 ------
 
 # BuildingType
 
 Implemented in JetSpec.Buildings
-
-
 
 ### Description
 
@@ -75,5 +69,3 @@ This enum controls all the building types.
 | runway   | A runway, where planes take off when made.                               |
 | hanger   | A hanger, where damaged/grounded planes are stored.                      |
 | demolish | Demolishes the building that it was placed on.                           |
-
-
