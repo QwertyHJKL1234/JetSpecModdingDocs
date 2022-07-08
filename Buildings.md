@@ -10,26 +10,27 @@ Adds a custom building to the game.
 
 ### Parameters:
 
-| name            | The name of the building.                                                                                                    |
+| Parameter       | Description                                                                                                                  |
 |:---------------:|:----------------------------------------------------------------------------------------------------------------------------:|
+| name            | The name of the building.                                                                                                    |
 | cost            | The cost to place the building.                                                                                              |
 | textureLocation | The location of the texture, starting at JetSpec\_Data.                                                                      |
 | buff            | DEPRECATED, SET TO "null".                                                                                                   |
 | description     | The description of what the building does.                                                                                   |
-| type            | The type of building, set as a [BuildingType](#buildingtype-enum).                                                           |
+| type            | The type of building, set as a [BuildingType](#buildingtype).                                                                |
 | level           | The level of the building, set from 1-5.                                                                                     |
 | scale           | The scale of the image in textureLocation, this is mostly trial and error to see what size you like. WIP texture uses 10x10. |
 
 ### Parameters (technical):
 
-| **Parameter**   | **Type, Reccomended Value**                                             |
+| Parameter       | Type, Reccomended Value                                                 |
 |:---------------:|:-----------------------------------------------------------------------:|
 | name            | string, "N/A"                                                           |
 | cost            | long, 100000                                                            |
 | textureLocation | string (filepath), "Data/Textures/WIP.png"                              |
 | buff            | string, "null"                                                          |
 | description     | string, "N/A"                                                           |
-| type            | [BuildingType](#buildingtype-enum), "util"                              |
+| type            | [BuildingType](#buildingtype), "util"                              |
 | level           | int, 1                                                                  |
 | scale           | Vector3, {"x":10.0,"y":1.0,"z":10.0,"magnitude":0.0,"sqrMagnitude":0.0} |
 
@@ -52,7 +53,7 @@ Adds a custom building to the game.
 
 ------
 
-# BuildingType (enum)
+# BuildingType
 
 Implemented in JetSpec.Buildings
 
@@ -64,8 +65,9 @@ This enum controls all the building types.
 
 ### Properties
 
-| util     | No special effects, acts like a decoration building.                     |
+| Property | Description                                                              |
 |:--------:|:------------------------------------------------------------------------:|
+| util     | No special effects, acts like a decoration building.                     |
 | office   | An office building to house Staff.                                       |
 | design   | A design office, that designs planes.                                    |
 | factory  | A factory, that builds each plane.                                       |
