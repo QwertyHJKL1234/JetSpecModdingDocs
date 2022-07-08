@@ -29,7 +29,7 @@ Adds a custom building to the game.
 | textureLocation | string (filepath), "Data/Textures/WIP.png"                              |
 | buff            | string, "null"                                                          |
 | description     | string, "N/A"                                                           |
-| type            | [BuildingType](#buildingtype-(enum)), "util"                            |
+| type            | [BuildingType](#buildingtype-enum), "util"                              |
 | level           | int, 1                                                                  |
 | scale           | Vector3, {"x":10.0,"y":1.0,"z":10.0,"magnitude":0.0,"sqrMagnitude":0.0} |
 
