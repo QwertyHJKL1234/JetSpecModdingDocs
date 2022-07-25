@@ -40,7 +40,7 @@ BUILDING TYPE NOT RECOGNIZED FOR {buildingName} TRY SETTING THE TYPE TO 'util', 
 
 #### Cause: The building stated has a type that isn't supported by the game
 
-#### How to fix: Set the type to one of [these](Buildings.md/#buildingtype).
+#### How to fix: Set the type to one of [these](https://github.com/QwertyHJKL1234/JetSpecModdingDocs/blob/master/Buildings.md#buildingtype).
 
 
 
