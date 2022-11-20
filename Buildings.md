@@ -1,6 +1,6 @@
 # Creating a custom building:
 
-Place a JSON file in the folder JetSpec_Data/Mods, place a texture in the folder specified by textureLocation in the JSON file.
+Place a JSON file in the folder JetSpec_Data/Mods/Buildings, place a texture in the folder specified by textureLocation in the JSON file.
 
 ### Description:
 
@@ -13,7 +13,6 @@ Adds a custom building to the game.
 | name            | The name of the building.                                                                                                    |
 | cost            | The cost to place the building.                                                                                              |
 | textureLocation | The location of the texture, starting at JetSpec\_Data.                                                                      |
-| buff            | DEPRECATED, SET TO "null".                                                                                                   |
 | description     | The description of what the building does.                                                                                   |
 | type            | The type of building, set as a [BuildingType](#buildingtype).                                                                |
 | level           | The level of the building, set from 1-5.                                                                                     |
@@ -26,7 +25,6 @@ Adds a custom building to the game.
 | name            | string, "N/A"                                                           |
 | cost            | long, 100000                                                            |
 | textureLocation | string (filepath), "Data/Textures/WIP.png"                              |
-| buff            | string, "null"                                                          |
 | description     | string, "N/A"                                                           |
 | type            | [BuildingType](#buildingtype), "util"                                   |
 | level           | int, 1                                                                  |
@@ -39,7 +37,6 @@ Adds a custom building to the game.
     "name":"Level 2 Factory", 
     "cost":500000000, 
     "textureLocation":"Data/Textures/Factory_lvl_2", 
-    "buff":"null", 
     "description":"A place to build planes, slowly.", 
     "type":"factory", 
     "level":2, 
