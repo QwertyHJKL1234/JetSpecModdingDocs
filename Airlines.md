@@ -13,14 +13,15 @@ Adds a custom airline to the game.
 | name       | The name of the airline.           |
 | totalMoney | The starting money of the airline. |
 | prefs      | See below.                         |
+| skipChecks | Skips checking for prefs = 3.0     |
 
 ### Prefs:
 
-| Parameter     | Description                                                                            |
-| ------------- | -------------------------------------------------------------------------------------- |
-| efficencyPref | The preferance of the airline for buying aircraft, all three fields should add to 3.0. |
-| seatsPref     | The preferance of the airline for buying aircraft, all three fields should add to 3.0. |
-| rangePref     | The preferance of the airline for buying aircraft, all three fields should add to 3.0. |
+| Parameter     | Description                                                                                                      |
+| ------------- | ---------------------------------------------------------------------------------------------------------------- |
+| efficencyPref | The preferance of the airline for buying aircraft, all three fields should add to 3.0. (Unless using skipChecks) |
+| seatsPref     | The preferance of the airline for buying aircraft, all three fields should add to 3.0. (Unless using skipChecks) |
+| rangePref     | The preferance of the airline for buying aircraft, all three fields should add to 3.0. (Unless using skipChecks) |
 
 ### Parameters (technical):
 
@@ -29,6 +30,7 @@ Adds a custom airline to the game.
 | name       | string, "N/A"           |
 | totalMoney | long, 1000000           |
 | prefs      | See below.              |
+| skipChecks | bool, false             |
 
 ### Prefs (technical):
 
@@ -37,6 +39,8 @@ Adds a custom airline to the game.
 | efficencyPref | float, 1.0              |
 | seatsPref     | float, 1.0              |
 | rangePref     | float, 1.0              |
+
+## IMPORTANT: MAKE SURE PREFS ALL ADD TO 3.0 (Unless using skipChecks)
 
 ### Example:
 
@@ -50,6 +54,7 @@ Adds a custom airline to the game.
     "rangePref": 1.5
   },
   "description": "AirAccess is a long haul carrier flying to and from their hub in Athens, Greece. They prioritize being able to fly to almost everywhere on the globe."
+  "skipChecks": false
 }
 ```
 

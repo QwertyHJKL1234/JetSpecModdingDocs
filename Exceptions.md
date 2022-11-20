@@ -1,9 +1,5 @@
 # List of all custom exceptions you may encounter while playing/modding.
 
-
-
-
-
 ### DateAfterIntMaxValueException:
 
 DATE IS APPROACHING OR IS AFTER JANUARY 19TH, 2038. SOME GAME FEATURES MAY BREAK DUE TO THE INT MAX VALUE BEING SATURATED AFTER JANUARY 19TH.
@@ -11,8 +7,6 @@ DATE IS APPROACHING OR IS AFTER JANUARY 19TH, 2038. SOME GAME FEATURES MAY BREAK
 #### Cause: System date is after Jan. 19th, 2038.
 
 #### How to fix: Set your system date to before Jan. 19th, 2038.
-
-
 
 ### PathIgnoredException:
 
@@ -22,8 +16,6 @@ PATH TO GAME CONTAINS README OR .META, NO BUILDINGS WILL WORK UNTIL THE GAME GET
 
 #### How to fix: Move the game folder to a different location.
 
-
-
 ### IncorrectFileTypeException:
 
 TEXTURE LOCATION FOR BUILDING {buildingName} IS NOT A .PNG FILE, GAME WILL NOT LOAD THIS BUILDING
@@ -31,8 +23,6 @@ TEXTURE LOCATION FOR BUILDING {buildingName} IS NOT A .PNG FILE, GAME WILL NOT L
 #### Cause: The texture of the stated building is not a .png file.
 
 #### How to fix: Change the texture to a .png file.
-
-
 
 ### BuildingTypeNotRecognizedException:
 
@@ -42,8 +32,6 @@ BUILDING TYPE NOT RECOGNIZED FOR {buildingName} TRY SETTING THE TYPE TO 'util', 
 
 #### How to fix: Set the type to one of [these](https://github.com/QwertyHJKL1234/JetSpecModdingDocs/blob/master/Buildings.md#buildingtype).
 
-
-
 ### JsonConvertException:
 
 Some Error has been found while trying to load a {item} named {name}.
@@ -51,8 +39,6 @@ Some Error has been found while trying to load a {item} named {name}.
 #### Cause: Broken building file.
 
 #### How to fix: Reinstall the game/all mods.
-
-
 
 ### BuildingDoesntExistException:
 
@@ -62,8 +48,6 @@ A building no longer exists, this could be cause by a incompatible save file, or
 
 #### How to fix: Create a new save, or reinstall the mod.
 
-
-
 ### ChecksumFailedException:
 
 Failed to load save, your save file might be corrupt. Please send the error message and save game located @ {saveFileLocation} to {EMAIL}.
@@ -72,4 +56,10 @@ Failed to load save, your save file might be corrupt. Please send the error mess
 
 #### How to fix: Use the "GenerateNewChecksum" command.
 
+### AirlinePrefsDontAddTo3Exception:
 
+Airline order preferances don't add to three, which is unallowed for game balancing reasons. ({AirlineName}).
+
+#### Cause: Airline prefs not adding to 3.0.
+
+#### How to fix: Change prefs in a mod, or set "skipChecks" to true in the Airline.json.
